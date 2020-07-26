@@ -4,36 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akhil Pokle | Digital Designer and Web Developer</title>
-    <meta name="description" content="FrontEnd Developer | Web Designer | Web Developer">
+    <meta name="description" content="FrontEnd Developer | Web Designer | Web Developer | UI/UX Designer. I am a freelance web designer and developer, I will design and developer websites for you startups and businesses">
+    <meta name="robots" content="index,follow" >   
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <!-- Hey there fello hacker ! If you're building your own portfolio and need any help, send me a HI, I will help you out with your project :)-->
     <header>
         <nav>
-            <div class="logo">AKHIL POKLE</div>
-            <ul>
-                <li>Case Study</li>
-                <li>Designs</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
+            <div role="navigation" class="container">
+                <div class="logo" role="contentinfo" aria-roledescription="logo">AKHIL POKLE</div>
+                <ul class="nav__items">
+                    <li><a class="nav_item" aria-label="Link to case study" href="./casestudy.html">Case Study</a></li>
+                    <li><a class="nav_item" aria-label="Link to designs" href="./designs.html">Designs</a></li>
+                    <li><a class="nav_item" aria-label="Link to projects" href="./projects.html">Projects</a></li>
+                    <li><a class="nav_item" aria-label="Link to contact information" href="#contact">Contact</a></li>
+                    <li><a class="nav_item" aria-label="Link to resume" href="resume.pdf">Resume</a></li>
+                </ul>
+                <div  class="mobile">
+                    <div class="logo" role="contentinfo" aria-roledescription="logo">AKHIL POKLE</div>
+                    <div class="hamburger">
+                        <span id="line1" class="line line1"></span>
+                        <span id="line2" class="line line2"></span>
+                        <span id="line3" class="line line3"></span>
+                    </div>
+                        <ul class="nav__items">
+                            <li><a class="nav_item" aria-label="Link to case study" href="./casestudy.html">Case Study</a></li>
+                            <li><a class="nav_item" aria-label="Link to designs" href="./designs.html">Designs</a></li>
+                            <li><a class="nav_item" aria-label="Link to projects" href="./projects.html">Projects</a></li>
+                            <li><a class="nav_item" aria-label="Link to contact information" href="#contact">Contact</a></li>
+                            <li><a class="nav_item" aria-label="Link to resume" href="resume.pdf">Resume</a></li>
+                        </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <h1>Hiiiii</h1>
+    <main>
+
+        <section class="hero">
+            <div role="heading" class="hero__container">
+                <div>
+                    <h1 class="t-h1 hero__header">
+                        Hi, I am Akhil.<br>
+                        <span class="gradient">Digital Designer</span> and<br>
+                        Web Developer
+                    </h1>
+                    <a aria-label="Link to contact information" href="#contact" class="btn btn-blue">Let's Connect</a>
+                </div>
+            </div>
+    </section>
+    <section class="about">
+        <div role="contentinfo" class="about__container">
+            <h2 class="t-h2 about__header">About Me</h2>
+            <p class="t-p">Hi, I am Akhil. I am a software developer and designer.</p> 
+            <p class="t-p">I enjoy creating things for the internet. My goal is to design and build products that are easy to use and add values to our lives.</p>
+            <p class="t-p">Here are few technologies I recently worked on:</p>
+            <div role="contentinfo" class="skills__container">
+                <div role="contentinfo" class="skill">
+                    <h4 class="t-h4">Development</h4>
+                    <ul class="skill__items">
+                        <li class="skill__item">Java</li>
+                        <li class="skill__item">Javascript</li>
+                        <li class="skill__item">HTML</li>
+                        <li class="skill__item">CSS(SASS)</li>
+                        <li class="skill__item">React</li>
+                        <li class="skill__item">Redux</li>
+                    </ul>
+                </div>
+                <div role="contentinfo"  class="skill">
+                    <h4 class="t-h4">Design</h4>
+                    <ul class="skill__items">
+                        <li class="skill__item">Prototyping</li>
+                        <li class="skill__item">Wireframing</li>
+                        <li class="skill__item">Interaction Design</li>
+                        <li class="skill__item">User Research</li>
+                        <li class="skill__item">Figma</li>
+                        <li class="skill__item">Affinity Designer</li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section class="case__study">
+        <div role="contentinfo" class="case__study__container">
+            <div class="case__study__header">
+                <h2 class="t-h2"> Case Study</h2>
+            </div>
+            <div class="case__study__details">
+                <img src="./images/Artboard 1.png" alt="Case study mockup">
+                <div role="contentinfo" class="case__study__about">
+                    <h3 class="t-h3">PetMe Case Study</h3>
+                    <p class="t-p">PetMe is a concept app that connect people with therapy dogs</p>
+                    <a class="btn btn-orange" href="./case study/petMe/index.html">View Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="design">
+        <div role="contentinfo" class="design__container">
+            <div class="design__header">
+                <h2 class="t-h2">Design</h2>
+            </div>
+            <div class="design__details">
+                <div role="contentinfo" class="design__about">
+                    <h3 class="t-h3">Ecommerce App</h3>
+                    <p class="t-p">I design Websites and Apps for startups and businessess</p>
+                    <a class="btn btn-orange" href="./case study/petMe/index.html">View Designs</a>
+                </div>
+                <img src="./images/design.png" alt="Designs mockup">
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <div role="contentinfo" class="projects__container">
+            <div class="projects__header">
+                <h2 class="t-h2"> Projects </h2>
+            </div>
+            <div class="projects__details">
+                <img src="./images/scoot.jpg" alt="Case study mockup">
+                <div role="contentinfo" class="projects__about">
+                    <h3 class="t-h3">Scoot Landing Page</h3>
+                    <p class="t-p">I develope pixel perfect websites that follow accesssiblity guidelines and are SEO optimized</p>
+                    <a class="btn btn-orange" href="./case study/petMe/index.html">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div role="contentinfo" class="contact__container">
+            <h2 class="t-h2">Let's Connect</h2>
+            <p class="t-p">Looking for someone to build a practical website for you ? Let's chat !</p> 
+            <p class="t-p">Or if you have a UI/UX designer and developer opportunities open in your organization, Lets chat !</p>
+            <a href="mailto:akhilpokle96@gmail.com">Connect !</a>
+        </div>
+    </section>
+</main>
     <footer>
         <nav>
-            <div class="logo">AKHIL POKLE</div>
-            <ul>
-                <li>Case Study</li>
-                <li>Designs</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-            <ul class="social">
-                <li>Github</li>
-                <li>Dribbble</li>
-                <li>LinkedIn</li>
-            </ul>
+            <div class="container">
+                <div role="contentinfo" class="logo"><a target="_blank" href="./index.html">AKHIL POKLE</a></div>
+                <a target="_blank" target="_blank" rel="nofollow noopener noreferrer" aria-label="GitHub" href="#">Github</a>
+                <a target="_blank" target="_blank" rel="nofollow noopener noreferrer" aria-label="Dribbble"  href="#">Dribbble</a>
+                <a target="_blank" target="_blank" rel="nofollow noopener noreferrer" aria-label="LinkedIn"  href="#">LinkedIn</a>
+                <a target="_blank" target="_blank" rel="nofollow noopener noreferrer" aria-label="Dev.to"  href="#">Dev.to</a>
+            </div>
         </nav>
     </footer>
+    <section class="side__left">
+            <a target="_blank" target="_blank" rel="nofollow noopener noreferrer" aria-label="GitHub" href="#">Github</a>
+            <a target="_blank" target="_blank" rel="nofollow noopener noreferrer" aria-label="Dribbble"  href="#">Dribbble</a>
+            <a target="_blank" target="_blank" rel="nofollow noopener noreferrer" aria-label="LinkedIn"  href="#">LinkedIn</a>
+            <a target="_blank" target="_blank" rel="nofollow noopener noreferrer" aria-label="Dev.to"  href="#">Dev.to</a>
+    </section>
+    <section class="side__right">
+        <p>akhilpokle96@gmail.com</p>
+    </section>
+    <div role="contentinfo" id="shots"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- <script src="./app.js"></script> -->
 </body>
 </html>

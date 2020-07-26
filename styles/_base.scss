@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+:root {
+	//color
+	--color-header: #0a2540;
+	--color-copy: #425466;
+	--color-white: #fff;
+
+	//font family
+	--font-family: 'Poppins', sans-serif;
+	//font size
+	--weight-light: 400;
+	--weight-regular: 500;
+	--weight-bold: 700;
+
+	//animation
+	--transition: 300ms ease-in-out;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-family);
+	font-size: 1.5rem;
+	background-color: var(--color-white);
+	color: var(--color-dim-grey);
+	overflow-x: hidden;
+}
+
+//breakpoints
+$bp-small: 48em;
+$bp-medium: 64em;
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.t-h1 {
+	font-family: var(--font-family);
+	font-weight: var(--weight-bold);
+	line-height: 1;
+	font-size: 7.2rem;
+	letter-spacing: -1.79px;
+	color: var(--color-header);
+	// @media #{$mq-small} {
+	// 	font-size: 5.6rem;
+	// 	letter-spacing: -2.5px;
+	// }
+}
+
+.t-h2 {
+	font-family: var(--font-family);
+	font-weight: var(--weight-bold);
+	font-size: 4.8rem;
+	letter-spacing: -1.43px;
+	line-height: 1;
+	color: var(--color-header);
+	// &--yellow-regular {
+	// 	font-weight: var(--weight-regular);
+	// 	color: var(--color-yellow);
+	// }
+	// @media #{$mq-small} {
+	// 	font-size: 4.8rem;
+	// 	letter-spacing: -2.14px;
+	// }
+}
+
+.t-h3 {
+	font-family: var(--font-family);
+	font-weight: var(--weight-regular);
+	font-size: 4rem;
+	letter-spacing: -1.43px;
+	line-height: 1;
+	color: var(--color-header);
+	// &--yellow-regular {
+	// 	font-weight: var(--weight-regular);
+	// 	color: var(--color-yellow);
+	// }
+	// @media #{$mq-small} {
+	// 	font-size: 4.8rem;
+	// 	letter-spacing: -2.14px;
+	// }
+}
+
+.t-h4 {
+	font-family: var(--font-family);
+	font-weight: var(--weight-bold);
+	font-size: 2rem;
+	letter-spacing: -0.89px;
+	line-height: 1.4;
+	color: var(--color-header);
+	// &--location {
+	// 	font-size: 2.4rem;
+	// 	letter-spacing: -1.07px;
+	// 	line-height: 28px;
+	// }
+	// &--title {
+	// 	@media (max-width: 767px) {
+	// 		font-size: 1.8rem;
+	// 		letter-spacing: -0.8px;
+	// 		line-height: 24px;
+	// 	}
+	// }
+	// &--value {
+	// 	font-size: 2.4rem;
+	// 	letter-spacing: -1.07px;
+	// 	line-height: 1.167;
+	// }
+	// @media #{$mq-small} {
+	// 	font-size: 2.4rem;
+	// 	letter-spacing: -1.07px;
+	// 	line-height: 1.167;
+	// }
+
+	// &--faq {
+	// 	font-size: 1.8rem;
+	// 	line-height: 24px;
+	// 	letter-spacing: -0.8px;
+	// }
+	// @media #{$mq-small} {
+	// 	font-size: 2.4rem;
+	// 	letter-spacing: -1.07px;
+	// 	line-height: 1.167;
+	// }
+}
+
+.t-p {
+	font-family: var(--font-family);
+	font-weight: var(--weight-light);
+	font-size: 1.5rem;
+	letter-spacing: 0px;
+	line-height: 2.5rem;
+	color: var(--color-header);
+}
+
+.btn {
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	font-weight: var(--weight-bold);
+	font-family: var(--font-family);
+	font-size: 1.5rem;
+	line-height: 1.667;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// &-regular {
+	// 	height: 5.3rem;
+	// 	width: 18rem;
+	// }
+
+	// &-m {
+	// 	height: 5.3rem;
+	// 	width: 19.2rem;
+	// }
+	// &-l {
+	// 	height: 5.3rem;
+	// 	width: 19.5rem;
+	// }
+}
+// .btn-yellow {
+// 	background-color: var(--color-yellow);
+// 	border: 3px solid transparent;
+// 	color: var(--color-white);
+// 	transition: var(--transition) background-color, var(--transition) border-color, var(--transition) color;
+// 	&:hover,
+// 	&:focus {
+// 		outline: none;
+// 		color: var(--color-yellow);
+// 		background-color: transparent;
+// 		border-color: var(--color-yellow);
+// 	}
+// }
+
+.btn-blue {
+	background-color: var(--color-header);
+	border: 3px solid transparent;
+	color: var(--color-white);
+	transition: var(--transition);
+	&:hover,
+	&:focus {
+		outline: none;
+		color: var(--color-header);
+		background-color: transparent;
+		border-color: var(--color-header);
+	}
+}
