@@ -39,6 +39,7 @@ body {
 	background-color: var(--color-white);
 	color: var(--color-dim-grey);
 	overflow-x: hidden;
+	position: relative;
 }
 
 //breakpoints
@@ -216,4 +217,15 @@ html {
 		background-color: transparent;
 		border-color: var(--color-header);
 	}
+}
+
+.screen-reader-only {
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(0px 0px 99.9% 99.9%);
+	overflow: hidden;
+	border: 0;
 }

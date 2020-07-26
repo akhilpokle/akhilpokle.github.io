@@ -35,6 +35,7 @@ body {
   background-color: var(--color-white);
   color: var(--color-dim-grey);
   overflow-x: hidden;
+  position: relative;
 }
 
 ul {
@@ -136,6 +137,18 @@ html {
   color: var(--color-header);
   background-color: transparent;
   border-color: var(--color-header);
+}
+
+.screen-reader-only {
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+          clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  border: 0;
 }
 
 header {
@@ -293,6 +306,97 @@ footer .container {
   }
 }
 
+footer .bragging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer svg {
+  max-width: 108px;
+}
+
+.side__left {
+  position: fixed;
+  left: 4px;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5vw;
+}
+
+.side__left a {
+  padding: 2rem 0rem;
+  margin: 0;
+}
+
+.side__left::after {
+  content: '';
+  height: 100px;
+  width: 2px;
+  background-color: #0a2540;
+  left: 4px;
+  bottom: 0;
+}
+
+.side__right {
+  position: fixed;
+  right: 4px;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5vw;
+}
+
+.side__right p {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  padding: 100px;
+  color: #0a2540;
+}
+
+.side__right a {
+  padding: 2rem 0rem;
+  margin: 0;
+}
+
+.side__right::after {
+  content: '';
+  height: 100px;
+  width: 2px;
+  background-color: #0a2540;
+  right: 4px;
+  bottom: 0;
+}
+
 .hero {
   width: 100%;
   height: 90vh;
@@ -346,9 +450,11 @@ footer .container {
 }
 
 .hero__container .t-h1 .gradient {
-  background-image: url(../images/1.png);
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-image: url("../images/2.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center center;
+  min-width: 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
@@ -606,6 +712,7 @@ footer .container {
   max-width: 1152px;
   margin: 0 auto;
   padding: 10rem;
+  padding-top: 2rem;
 }
 
 @media only screen and (max-width: 48em) {
@@ -639,7 +746,7 @@ footer .container {
 
 .design__details img {
   width: 100%;
-  max-width: 576px;
+  max-width: 500px;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center center;
@@ -841,6 +948,7 @@ footer .container {
   margin: 0 auto;
   padding: 10rem;
   padding-top: 0rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 48em) {
@@ -865,7 +973,7 @@ footer .container {
   bottom: -2px;
   left: -2px;
   left: 0;
-  background-color: #b5ead7;
+  background-color: #c7ceea;
   z-index: -1;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
@@ -879,7 +987,38 @@ footer .container {
   bottom: -2px;
   left: -2px;
   left: 0;
-  background-color: #b5ead7;
+  background-color: #c7ceea;
   z-index: -1;
+}
+
+.contact p {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  padding: 1rem 0rem;
+  color: #425466;
+}
+
+@media only screen and (max-width: 48em) {
+  .contact p {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.contact .btn-orange {
+  background-color: #9e89ff;
+  color: white;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  margin: 2rem auto;
+  border: 3px solid transparent;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.contact .btn-orange:hover {
+  color: #9e89ff;
+  border: 3px solid #9e89ff;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
