@@ -264,6 +264,13 @@ header .nav__items .nav__item:nth-child(2) {
 
 footer {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media only screen and (max-width: 48em) {
@@ -325,8 +332,37 @@ footer svg {
   max-width: 108px;
 }
 
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 footer .mobile__nav {
   display: none;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 48em) {
+  footer .mobile__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .side__left {
@@ -442,6 +478,7 @@ footer .mobile__nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 20rem;
 }
 
 @media only screen and (max-width: 48em) {

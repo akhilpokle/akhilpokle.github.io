@@ -67,6 +67,8 @@ header {
 
 footer {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
 	@media only screen and(max-width:$bp-small) {
 		display: flex;
 	}
@@ -98,9 +100,21 @@ footer {
 	svg {
 		max-width: 108px;
 	}
-
+	nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	.mobile__nav {
 		display: none;
+		width: 80%;
+		max-width: 500px;
+		margin: 0 auto;
+		@media only screen and(max-width:$bp-small) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 }
 
