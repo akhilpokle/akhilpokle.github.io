@@ -90,10 +90,17 @@ footer {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding: 5rem 0rem;
+		color: #0a2540;
+		font-weight: 500;
 	}
 
 	svg {
 		max-width: 108px;
+	}
+
+	.mobile__nav {
+		display: none;
 	}
 }
 
@@ -117,6 +124,9 @@ footer {
 		background-color: #0a2540;
 		left: 4px;
 		bottom: 0;
+	}
+	@media only screen and(max-width:$bp-small) {
+		display: none;
 	}
 }
 
@@ -145,5 +155,8 @@ footer {
 		background-color: #0a2540;
 		right: 4px;
 		bottom: 0;
+	}
+	@media only screen and(max-width:$bp-small) {
+		display: none;
 	}
 }

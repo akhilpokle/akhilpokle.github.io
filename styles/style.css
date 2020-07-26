@@ -316,10 +316,17 @@ footer .bragging {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5rem 0rem;
+  color: #0a2540;
+  font-weight: 500;
 }
 
 footer svg {
   max-width: 108px;
+}
+
+footer .mobile__nav {
+  display: none;
 }
 
 .side__left {
@@ -354,6 +361,12 @@ footer svg {
   background-color: #0a2540;
   left: 4px;
   bottom: 0;
+}
+
+@media only screen and (max-width: 48em) {
+  .side__left {
+    display: none;
+  }
 }
 
 .side__right {
@@ -395,6 +408,12 @@ footer svg {
   background-color: #0a2540;
   right: 4px;
   bottom: 0;
+}
+
+@media only screen and (max-width: 48em) {
+  .side__right {
+    display: none;
+  }
 }
 
 .hero {
