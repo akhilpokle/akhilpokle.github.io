@@ -384,6 +384,10 @@ header .mobile .mobile__nav__items.show a {
   border-bottom: 1px solid white;
 }
 
+header .active {
+  color: orangered;
+}
+
 footer {
   width: 100%;
   display: -webkit-box;
@@ -1198,5 +1202,87 @@ footer .mobile__nav {
   color: #9e89ff;
   border: 3px solid #9e89ff;
   background-color: white;
+}
+
+.project {
+  width: 100%;
+  min-height: 90vh;
+  padding: 10rem 0rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .project {
+    padding: 3rem 0rem;
+  }
+}
+
+.project__container {
+  width: 100%;
+  max-width: 1152px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 24px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .project__container {
+    width: 50%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .project__container {
+    width: 70%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.project .card {
+  background-color: rgba(133, 133, 133, 0.123);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.project .card:hover {
+  background-color: #0a2540;
+  color: white;
+}
+
+.project .card:hover .t-h4,
+.project .card:hover .t-p {
+  color: white;
+}
+
+.project .card img {
+  width: 100%;
+}
+
+.project .t-h4 {
+  font-weight: 500;
+  padding-left: 2rem;
+}
+
+@media only screen and (max-width: 1350px) {
+  .project .t-h4 {
+    font-size: 1.5rem;
+  }
+}
+
+.project .t-p {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1350px) {
+  .project .t-p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
 }
 /*# sourceMappingURL=style.css.map */

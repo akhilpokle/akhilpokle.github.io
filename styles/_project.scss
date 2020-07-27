@@ -1,0 +1,54 @@
+.project {
+	width: 100%;
+	min-height: 90vh;
+	padding: 10rem 0rem;
+	@media only screen and (max-width: 1200px) {
+		padding: 3rem 0rem;
+	}
+	&__container {
+		width: 100%;
+		max-width: 1152px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 24px;
+		@media only screen and (max-width: 1350px) {
+			width: 50%;
+			grid-template-columns: 1fr 1fr;
+		}
+		@media only screen and (max-width: 1200px) {
+			width: 70%;
+			grid-template-columns: 1fr;
+		}
+	}
+	.card {
+		background-color: rgba(133, 133, 133, 0.123);
+		transition: all 0.2s ease-in;
+		&:hover {
+			background-color: #0a2540;
+			color: white;
+			.t-h4,
+			.t-p {
+				color: white;
+			}
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.t-h4 {
+		font-weight: 500;
+		padding-left: 2rem;
+		@media only screen and (max-width: 1350px) {
+			font-size: 1.5rem;
+		}
+	}
+	.t-p {
+		padding-left: 2rem;
+		font-size: 1.5rem;
+		@media only screen and (max-width: 1350px) {
+			font-size: 1rem;
+			line-height: 1.4;
+		}
+	}
+}
