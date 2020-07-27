@@ -15,27 +15,28 @@
             <div role="navigation" class="container">
                 <div class="logo" role="contentinfo" aria-roledescription="logo">AKHIL POKLE</div>
                 <ul class="nav__items">
-                    <li><a class="nav_item" aria-label="Link to case study" href="./casestudy.html">Case Study</a></li>
-                    <li><a class="nav_item" aria-label="Link to designs" href="./designs.html">Designs</a></li>
-                    <li><a class="nav_item" aria-label="Link to projects" href="./projects.html">Projects</a></li>
+                    <li><a class="nav_item" aria-label="Link to case study" href="#casestudy">Case Study</a></li>
+                    <li><a class="nav_item" aria-label="Link to designs" href="#design">Designs</a></li>
+                    <li><a class="nav_item" aria-label="Link to projects" href="#projects">Projects</a></li>
                     <li><a class="nav_item" aria-label="Link to contact information" href="#contact">Contact</a></li>
                     <li><a class="nav_item" aria-label="Link to resume" href="resume.pdf">Resume</a></li>
                 </ul>
-                <div  class="mobile">
-                    <div class="logo" role="contentinfo" aria-roledescription="logo">AKHIL POKLE</div>
-                    <div class="hamburger">
-                        <span id="line1" role="none" class="line line1"></span>
-                        <span id="line2" role="none" class="line line2"></span>
-                        <span id="line3" role="none" class="line line3"></span>
-                    </div>
-                        <ul class="nav__items">
-                            <li><a class="nav_item" aria-label="Link to case study" href="./casestudy.html">Case Study</a></li>
-                            <li><a class="nav_item" aria-label="Link to designs" href="./designs.html">Designs</a></li>
-                            <li><a class="nav_item" aria-label="Link to projects" href="./projects.html">Projects</a></li>
-                            <li><a class="nav_item" aria-label="Link to contact information" href="#contact">Contact</a></li>
-                            <li><a class="nav_item" aria-label="Link to resume" href="resume.pdf">Resume</a></li>
-                        </ul>
+            </div>
+            <div  class="mobile">
+                <div class="logo" role="contentinfo" aria-roledescription="logo">AKHIL POKLE</div>
+                <div class="hamburger">
+                    <span id="line1" role="none" class="line line1"></span>
+                    <span id="line2" role="none" class="line line2"></span>
+                    <span id="line3" role="none" class="line line3"></span>
                 </div>
+                <ul class="mobile__nav__items">
+                    <li><h3>Menu</h3></li>
+                    <li><a class="mobile__nav_item" aria-label="Link to case study" href="#casestudy">Case Study</a></li>
+                    <li><a class="mobile__nav_item" aria-label="Link to designs" href="#design">Designs</a></li>
+                    <li><a class="mobile__nav_item" aria-label="Link to projects" href="#projects">Projects</a></li>
+                    <li><a class="mobile__nav_item" aria-label="Link to contact information" href="#contact">Contact</a></li>
+                    <li><a class="mobile__nav_item" aria-label="Link to resume" href="resume.pdf">Resume</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -53,7 +54,7 @@
                 </div>
             </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div role="contentinfo" class="about__container">
             <h2 class="t-h2 about__header">About Me</h2>
             <p class="t-p">Hi, I am Akhil. I am a software developer and designer.</p> 
@@ -85,7 +86,7 @@
             </div> 
         </div>
     </section>
-    <section class="case__study">
+    <section class="case__study" id="casestudy">
         <div role="contentinfo" class="case__study__container">
             <div class="case__study__header">
                 <h2 class="t-h2"> Case Study</h2>
@@ -100,7 +101,7 @@
             </div>
         </div>
     </section>
-    <section class="design">
+    <section class="design" id="design">
         <div role="contentinfo" class="design__container">
             <div class="design__header">
                 <h2 class="t-h2">Design</h2>
@@ -115,7 +116,7 @@
             </div>
         </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
         <div role="contentinfo" class="projects__container">
             <div class="projects__header">
                 <h2 class="t-h2"> Projects </h2>
@@ -165,6 +166,6 @@
     </section>
     <div role="contentinfo" id="shots"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <!-- <script src="./app.js"></script> -->
+    <script src="./app.js"></script>
 </body>
 </html>

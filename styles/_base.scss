@@ -229,3 +229,11 @@ html {
 	overflow: hidden;
 	border: 0;
 }
+
+a {
+	color: #0a2540;
+	transition: var(--transition);
+	&:hover {
+		color: #7c8fa1;
+	}
+}
