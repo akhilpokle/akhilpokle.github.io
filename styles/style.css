@@ -161,6 +161,18 @@ a:hover {
   color: #7c8fa1;
 }
 
+#resume {
+  padding: 1rem 3rem;
+  border: 2px solid #0a2540;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#resume:hover {
+  color: white;
+  background-color: #0a2540;
+}
+
 header {
   position: fixed;
   width: 100%;
