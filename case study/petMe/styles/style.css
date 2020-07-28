@@ -475,6 +475,31 @@ ul {
   }
 }
 
+.intro__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro__copy {
+  padding: 2rem 0rem;
+}
+
+.intro .t-p {
+  padding: 0rem;
+}
+
+.intro__content .t-p {
+  padding: 0.75rem 0rem;
+}
+
+.intro .t-h3 {
+  padding: 0rem;
+}
+
 .responsibilities {
   width: 100%;
   min-height: 30rem;
