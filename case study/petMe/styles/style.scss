@@ -33,6 +33,7 @@ header {
 	box-shadow: rgba(189, 189, 189, 0.7) 0px 10px 30px -10px;
 	a {
 		border-bottom: transparent;
+		color: #0a2540;
 	}
 	@media only screen and (max-width: $bp-mobile) {
 		position: relative;
@@ -651,6 +652,7 @@ ul {
 .userflow {
 	width: 100%;
 	padding-bottom: 3rem;
+	text-align: center;
 	&__container {
 		width: 100%;
 		max-width: 1152px;
@@ -672,8 +674,8 @@ ul {
 		}
 	}
 	img {
-		width: 100%;
-		margin: auto;
+		width: 90%;
+		margin: 0 auto;
 	}
 }
 

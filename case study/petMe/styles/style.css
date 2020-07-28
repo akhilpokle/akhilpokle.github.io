@@ -29,6 +29,7 @@ header {
 
 header a {
   border-bottom: transparent;
+  color: #0a2540;
 }
 
 @media only screen and (max-width: 670px) {
@@ -988,6 +989,7 @@ ul {
 .userflow {
   width: 100%;
   padding-bottom: 3rem;
+  text-align: center;
 }
 
 .userflow__container {
@@ -1027,8 +1029,8 @@ ul {
 }
 
 .userflow img {
-  width: 100%;
-  margin: auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .ideation {
