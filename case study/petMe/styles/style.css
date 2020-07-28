@@ -1906,7 +1906,7 @@ ul {
   background-color: #9e89ff;
   color: white;
   display: inline-block;
-  padding: 1.5rem 4rem;
+  padding: 1rem 4rem;
   margin: 2rem auto;
   border: 3px solid transparent;
   -webkit-transition: var(--transition);
