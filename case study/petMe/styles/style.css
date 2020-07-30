@@ -485,6 +485,18 @@ ul {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 1024px) {
+  .intro__div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro__div iframe {
+    max-width: 100% !important;
+  }
+}
+
 .intro__copy {
   padding: 2rem 0rem;
 }

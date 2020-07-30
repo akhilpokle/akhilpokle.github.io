@@ -345,6 +345,12 @@ ul {
 	&__div {
 		display: flex;
 		justify-content: space-between;
+		@media only screen and(max-width:1024px) {
+			flex-direction: column;
+			iframe {
+				max-width: 100% !important;
+			}
+		}
 	}
 	&__copy {
 		padding: 2rem 0rem;
