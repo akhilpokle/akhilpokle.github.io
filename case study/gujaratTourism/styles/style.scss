@@ -963,6 +963,18 @@ ul {
 	img {
 		max-width: 100%;
 	}
+	&__copy {
+		padding: 5rem 0rem;
+		display: grid;
+		grid-template-columns: 45% 45%;
+		grid-gap: 50px;
+		align-items: center;
+		justify-items: center;
+		h4 {
+			padding-bottom: 2rem;
+			font-size: 3rem;
+		}
+	}
 }
 
 .affinity {
