@@ -1659,6 +1659,25 @@ ul {
   padding: 0.5rem 0rem;
 }
 
+.analysis .trial {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 1fr;
+      grid-template-columns: 35% 1fr;
+  grid-gap: 4rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2rem;
+}
+
+.analysis .trial .t-h3 {
+  font-size: 5rem;
+  line-height: 6rem;
+  width: 50%;
+  color: #0c2b34;
+}
+
 .analysis__container {
   width: 100%;
   max-width: 980px;
@@ -1700,10 +1719,12 @@ ul {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 60%;
-      grid-template-columns: 1fr 60%;
+  -ms-grid-columns: 60% 1fr;
+      grid-template-columns: 60% 1fr;
   justify-items: end;
-  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .analysis .inspiration__container .t-p {
@@ -1767,7 +1788,13 @@ ul {
 
 .landing_page {
   width: 100%;
-  padding-bottom: 5rem;
+  padding: 5rem;
+  text-align: center;
+}
+
+.landing_page .t-h3 {
+  font-size: 5rem;
+  padding-bottom: 3rem;
 }
 
 .landing_page__container {
@@ -2013,6 +2040,11 @@ ul {
 .conclusion .italic {
   font-style: italic;
   font-weight: 700;
+}
+
+.conclusion .red {
+  color: #f15b66;
+  font-weight: 500;
 }
 
 .appendix {
