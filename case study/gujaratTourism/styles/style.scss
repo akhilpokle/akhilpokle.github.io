@@ -5,6 +5,7 @@
 	--color--orange: #fe4c3b;
 	--color--blue: #242e51;
 	--color--light-blue: #1d1e25;
+	--color--para: #4e4e4eea;
 
 	//weights
 	--weight-light: 300;
@@ -52,7 +53,7 @@ header {
 		position: relative;
 		height: 6.4rem;
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and(max-width:$bp-mobile) {
 			display: none;
@@ -244,8 +245,9 @@ a {
 
 p {
 	font-size: 1.75rem;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.4;
+	color: #585858;
 }
 
 .btn {
@@ -290,7 +292,7 @@ p {
 	&__container {
 		margin: 0 auto;
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -330,7 +332,7 @@ ul {
 	&__container {
 		margin: 0 auto;
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		display: flex;
 		flex-direction: column;
 		min-height: 20rem;
@@ -374,10 +376,16 @@ ul {
 	}
 	.t-p {
 		padding: 0rem;
+		padding-bottom: 1rem;
+		font-weight: 400;
+		color: #585858;
 	}
 	&__content {
 		.t-p {
 			padding: 0.75rem 0rem;
+			padding-bottom: 1rem;
+			font-weight: 400;
+			color: #585858;
 		}
 	}
 	.t-h3 {
@@ -395,7 +403,7 @@ ul {
 	&__container {
 		margin: 0 auto;
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -409,6 +417,12 @@ ul {
 	.responsibility__container {
 		display: flex;
 		justify-content: space-between;
+		.responsibility {
+			width: 100%;
+			img {
+				max-width: 100%;
+			}
+		}
 		@media only screen and(max-width: $bp-mobile) {
 			flex-direction: column;
 			justify-content: center;
@@ -417,8 +431,11 @@ ul {
 		@media only screen and (max-width: $bp-tablet) {
 			max-width: 100%;
 			.responsibility {
-				width: 100%;
+				max-width: 100%;
 				text-align: center;
+				img {
+					max-width: 100%;
+				}
 			}
 			img {
 				max-width: 75%;
@@ -430,10 +447,10 @@ ul {
 .process {
 	width: 100%;
 	min-height: 30rem;
-	padding: 3rem 0rem;
+	padding: 2rem 0rem;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
@@ -446,13 +463,69 @@ ul {
 
 .discovery {
 	width: 100%;
-	padding: 2rem 0rem;
+	padding: 1rem 0rem;
+	height: 80vh;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
+		}
+	}
+	.research {
+		&__container {
+			display: grid;
+			grid-template-columns: 45% 45%;
+			grid-gap: 50px;
+			align-items: center;
+			.t-p {
+				padding: 0.5rem 0rem;
+				padding-bottom: 1rem;
+				font-weight: 400;
+				color: #585858;
+				.red {
+					font-weight: 400;
+					color: #f15b66;
+				}
+			}
+		}
+	}
+}
+
+.user_test {
+	width: 100%;
+	min-height: 50vh;
+	&__container {
+		max-width: 980px;
+		margin: 0 auto;
+	}
+	&__results {
+		display: grid;
+		grid-template-columns: 45% 45%;
+		grid-gap: 50px;
+		padding: 1rem 0rem;
+		.red {
+			font-weight: 500;
+			color: #f15b66;
+		}
+		.t-p {
+			padding: 0.5rem 0rem;
+			padding-bottom: 1rem;
+			font-weight: 400;
+			color: #585858;
+		}
+	}
+	.trial {
+		display: grid;
+		grid-template-columns: 35% 1fr;
+		grid-gap: 4rem;
+		align-items: flex-end;
+		.t-h3 {
+			font-size: 5rem;
+			line-height: 6rem;
+			width: 50%;
+			color: #0c2b34;
 		}
 	}
 }
@@ -463,14 +536,31 @@ ul {
 
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
 		}
 	}
+	.t-p {
+		font-weight: 400;
+		padding-bottom: 0.5rem;
+		color: #585858;
+	}
 	&__intro {
 		padding: 2rem 0rem;
+		.trial {
+			display: grid;
+			grid-template-columns: 35% 1fr;
+			grid-gap: 4rem;
+			align-items: center;
+			.t-h3 {
+				font-size: 5rem;
+				line-height: 6rem;
+				width: 50%;
+				color: #0c2b34;
+			}
+		}
 	}
 	&__sections {
 		display: flex;
@@ -526,12 +616,17 @@ ul {
 		}
 	}
 	&__items__takeaway .takeaway__item {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		padding: 1rem 0rem;
+		// display: flex;
+		// justify-content: flex-start;
+		// align-items: center;
+		padding: 0.5rem 0rem;
 		img {
 			transform: rotate(270deg);
+			max-width: 100%;
+			object-fit: contain;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
 		}
 	}
 }
@@ -547,7 +642,7 @@ ul {
 	padding: 3rem 0rem;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
@@ -574,12 +669,38 @@ ul {
 	}
 }
 
+.insight {
+	width: 100%;
+	padding: 3rem 0rem;
+	&__container {
+		width: 100%;
+		max-width: 980px;
+		margin: 0 auto;
+	}
+	.trial {
+		display: grid;
+		grid-template-columns: 35% 1fr;
+		grid-gap: 4rem;
+		align-items: flex-end;
+		.t-h3 {
+			font-size: 5rem;
+			line-height: 6rem;
+			width: 50%;
+			color: #0c2b34;
+		}
+	}
+	img {
+		max-width: 100%;
+		padding-top: 5rem;
+	}
+}
+
 .competitor {
 	width: 100%;
 	padding: 3rem 0rem;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
@@ -591,8 +712,33 @@ ul {
 			align-items: center;
 		}
 	}
+	img {
+		margin: 2rem 0rem;
+	}
 	p {
 		padding-bottom: 1rem;
+		font-weight: 400;
+		color: #585858;
+	}
+	.red {
+		color: #f15b66;
+	}
+	.bold {
+		color: var(--color--blue);
+		font-weight: 700;
+		padding-top: 2rem;
+	}
+	.trial {
+		display: grid;
+		grid-template-columns: 35% 1fr;
+		grid-gap: 4rem;
+		align-items: center;
+		.t-h3 {
+			font-size: 5rem;
+			line-height: 6rem;
+			width: 50%;
+			color: #0c2b34;
+		}
 	}
 }
 
@@ -601,7 +747,7 @@ ul {
 	padding: 3rem 0rem;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
@@ -613,16 +759,35 @@ ul {
 			align-items: center;
 		}
 	}
+	.trial {
+		display: grid;
+		grid-template-columns: 35% 1fr;
+		grid-gap: 4rem;
+		align-items: flex-start;
+		margin: 2rem 0rem;
+		.t-h3 {
+			font-size: 5rem;
+			line-height: 6rem;
+			width: 50%;
+			color: #0c2b34;
+		}
+	}
 }
 
 .brainstorming {
 	width: 100%;
 	padding-bottom: 3rem;
 	min-height: 40rem;
+	img {
+		width: 100%;
+	}
 	p {
 		font-weight: 300;
 		color: #1b1c1e;
 		padding: 0.5rem 0rem;
+		padding-bottom: 1rem;
+		font-weight: 400;
+		color: #585858;
 	}
 	h4 {
 		font-size: 2rem;
@@ -634,7 +799,7 @@ ul {
 	align-items: center;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
@@ -668,6 +833,18 @@ ul {
 		display: flex;
 		align-items: center;
 	}
+	.trial {
+		display: grid;
+		grid-template-columns: 35% 1fr;
+		grid-gap: 4rem;
+		align-items: center;
+		.t-h3 {
+			font-size: 5rem;
+			line-height: 6rem;
+			width: 50%;
+			color: #0c2b34;
+		}
+	}
 }
 
 .info-arch {
@@ -675,7 +852,7 @@ ul {
 	padding-bottom: 3rem;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 40% 1fr;
@@ -695,6 +872,11 @@ ul {
 	}
 	.t-p {
 		padding-bottom: 1rem;
+		font-weight: 400;
+		color: #585858;
+		padding-bottom: 1rem;
+		font-weight: 400;
+		color: #585858;
 	}
 }
 
@@ -703,7 +885,7 @@ ul {
 	padding-bottom: 3rem;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
@@ -718,6 +900,12 @@ ul {
 			}
 			.t-p {
 				text-align: center;
+				padding-bottom: 1rem;
+				font-weight: 400;
+				color: #585858;
+				padding-bottom: 1rem;
+				font-weight: 400;
+				color: #585858;
 			}
 		}
 	}
@@ -732,7 +920,7 @@ ul {
 	padding-bottom: 3rem;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
@@ -744,11 +932,29 @@ ul {
 			align-items: center;
 			.t-p {
 				text-align: center;
+				padding-bottom: 1rem;
+				font-weight: 400;
+				color: #585858;
 			}
+		}
+	}
+	.trial {
+		display: grid;
+		grid-template-columns: 35% 1fr;
+		grid-gap: 4rem;
+		align-items: center;
+		.t-h3 {
+			font-size: 5rem;
+			line-height: 6rem;
+			width: 50%;
+			color: #0c2b34;
 		}
 	}
 	.t-p {
 		padding-bottom: 1rem;
+		padding-bottom: 1rem;
+		font-weight: 400;
+		color: #585858;
 	}
 	img {
 		transform: rotate(270deg);
@@ -760,7 +966,7 @@ ul {
 	padding-bottom: 3rem;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 45% 45%;
@@ -799,10 +1005,15 @@ ul {
 	padding-bottom: 10rem;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 1fr 60%;
+		.t-p {
+			padding-bottom: 1rem;
+			font-weight: 400;
+			color: #585858;
+		}
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
 		}
@@ -835,7 +1046,7 @@ ul {
 
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		display: flex;
 		@media only screen and (max-width: $bp-tablet) {
@@ -856,7 +1067,7 @@ ul {
 
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
@@ -896,7 +1107,7 @@ ul {
 	}
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
@@ -957,7 +1168,7 @@ ul {
 	padding-bottom: 5rem;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 	}
 	img {
@@ -983,7 +1194,7 @@ ul {
 
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
@@ -1018,10 +1229,21 @@ ul {
 .UI {
 	width: 100%;
 	padding-bottom: 3rem;
-
+	.trial {
+		display: grid;
+		grid-template-columns: 35% 1fr;
+		grid-gap: 4rem;
+		align-items: flex-end;
+		.t-h3 {
+			font-size: 5rem;
+			line-height: 6rem;
+			width: 50%;
+			color: #0c2b34;
+		}
+	}
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
@@ -1039,7 +1261,7 @@ ul {
 	width: 100%;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
@@ -1055,7 +1277,7 @@ ul {
 	padding: 10rem 0rem;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 1fr 40%;
@@ -1088,18 +1310,18 @@ ul {
 	width: 100%;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
 		}
 	}
 	.t-p {
-		padding: 2rem 0rem;
+		padding: 1rem 0rem;
 	}
 	.italic {
 		font-style: italic;
-		font-weight: 500;
+		font-weight: 700;
 	}
 }
 
@@ -1107,7 +1329,7 @@ ul {
 	width: 100%;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
@@ -1117,7 +1339,7 @@ ul {
 
 .dropdown {
 	width: 100%;
-	max-width: 1110px;
+	max-width: 980px;
 	margin: 0 auto;
 	position: relative;
 	height: 100%;
@@ -1278,7 +1500,7 @@ ul {
 	padding: 10rem 0rem;
 	&__container {
 		width: 100%;
-		max-width: 1110px;
+		max-width: 980px;
 		margin: 0 auto;
 		padding: 10rem;
 		padding-top: 0rem;
