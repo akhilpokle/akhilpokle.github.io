@@ -1290,11 +1290,6 @@ ul {
   width: 100%;
   max-width: 980px;
   margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% 1fr;
-      grid-template-columns: 40% 1fr;
-  grid-gap: 20px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1332,6 +1327,24 @@ ul {
   padding-bottom: 1rem;
   font-weight: 400;
   color: #585858;
+}
+
+.info-arch .trial {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 1fr;
+      grid-template-columns: 35% 1fr;
+  grid-gap: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-arch .trial .t-h3 {
+  font-size: 5rem;
+  line-height: 6rem;
+  width: 50%;
+  color: #0c2b34;
 }
 
 .userflow {
