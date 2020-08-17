@@ -1009,9 +1009,9 @@ ul {
 		width: 100%;
 		max-width: 980px;
 		margin: 0 auto;
-		display: grid;
-		grid-template-columns: 45% 45%;
-		grid-gap: 50px;
+		// display: grid;
+		// grid-template-columns: 45% 45%;
+		// grid-gap: 50px;
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
 		}
@@ -1039,17 +1039,39 @@ ul {
 	.btn {
 		margin-top: 2rem;
 	}
+	.trial {
+		display: grid;
+		grid-template-columns: 36% 1fr;
+		grid-gap: 4rem;
+		align-items: center;
+		.t-h3 {
+			font-size: 5rem;
+			line-height: 6rem;
+			color: #0c2b34;
+		}
+	}
 }
 
 .prototype {
 	width: 100%;
 	padding-bottom: 10rem;
+	.trial {
+		display: grid;
+		grid-template-columns: 36% 1fr;
+		grid-gap: 4rem;
+		align-items: center;
+		.t-h3 {
+			font-size: 5rem;
+			line-height: 6rem;
+			color: #0c2b34;
+		}
+	}
 	&__container {
 		width: 100%;
 		max-width: 980px;
 		margin: 0 auto;
-		display: grid;
-		grid-template-columns: 1fr 60%;
+		// display: grid;
+		// grid-template-columns: 1fr 60%;
 		.t-p {
 			padding-bottom: 1rem;
 			font-weight: 400;
