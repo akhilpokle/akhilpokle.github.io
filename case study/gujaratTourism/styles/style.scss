@@ -1054,12 +1054,13 @@ ul {
 
 .prototype {
 	width: 100%;
-	padding-bottom: 10rem;
+	padding: 5rem 0rem;
 	.trial {
 		display: grid;
 		grid-template-columns: 36% 1fr;
 		grid-gap: 4rem;
 		align-items: center;
+		width: 100%;
 		.t-h3 {
 			font-size: 5rem;
 			line-height: 6rem;
@@ -1072,6 +1073,9 @@ ul {
 		margin: 0 auto;
 		// display: grid;
 		// grid-template-columns: 1fr 60%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		.t-p {
 			padding-bottom: 1rem;
 			font-weight: 400;
@@ -1079,6 +1083,12 @@ ul {
 		}
 		@media only screen and (max-width: $bp-tablet) {
 			width: 80%;
+		}
+		.center {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 		img {
 			max-width: 100%;
