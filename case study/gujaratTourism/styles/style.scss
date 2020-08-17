@@ -819,8 +819,8 @@ ul {
 	}
 	h4 {
 		font-size: 2rem;
-		font-weight: 400;
-		color: #313f75;
+		font-weight: 700;
+		color: #585858;
 	}
 	display: flex;
 	justify-content: center;
@@ -844,7 +844,7 @@ ul {
 			grid-gap: 50px;
 			justify-items: center;
 			align-items: center;
-			margin: 5rem auto;
+			margin: 1rem auto;
 			img {
 				max-width: 100%;
 			}
@@ -945,7 +945,7 @@ ul {
 
 .ideation {
 	width: 100%;
-	padding-bottom: 3rem;
+	padding: 5rem 0rem;
 	&__container {
 		width: 100%;
 		max-width: 980px;
@@ -983,8 +983,10 @@ ul {
 		font-weight: 400;
 		color: #585858;
 	}
-	img {
-		transform: rotate(270deg);
+	&__copy {
+		display: grid;
+		grid-template-columns: 45% 45%;
+		padding-top: 2rem;
 	}
 }
 

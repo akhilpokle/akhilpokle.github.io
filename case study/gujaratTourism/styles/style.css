@@ -1193,8 +1193,8 @@ ul {
 
 .brainstorming h4 {
   font-size: 2rem;
-  font-weight: 400;
-  color: #313f75;
+  font-weight: 700;
+  color: #585858;
 }
 
 .brainstorming__container {
@@ -1237,7 +1237,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5rem auto;
+  margin: 1rem auto;
 }
 
 .brainstorming__container__copy img {
@@ -1388,7 +1388,7 @@ ul {
 
 .ideation {
   width: 100%;
-  padding-bottom: 3rem;
+  padding: 5rem 0rem;
 }
 
 .ideation__container {
@@ -1451,9 +1451,12 @@ ul {
   color: #585858;
 }
 
-.ideation img {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+.ideation__copy {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  padding-top: 2rem;
 }
 
 .wireframes {
