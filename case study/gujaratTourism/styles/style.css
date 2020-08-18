@@ -1349,7 +1349,24 @@ ul {
 
 .userflow {
   width: 100%;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
+}
+
+.userflow .trial {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 1fr;
+      grid-template-columns: 35% 1fr;
+  grid-gap: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.userflow .trial .t-h3 {
+  font-size: 5rem;
+  line-height: 6rem;
+  color: #0c2b34;
 }
 
 .userflow__container {
@@ -1394,8 +1411,17 @@ ul {
   }
 }
 
+.userflow .t-p {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.userflow .red {
+  font-weight: 500;
+  color: #f15b66;
+}
+
 .userflow img {
-  width: 90%;
   margin: 0 auto;
 }
 

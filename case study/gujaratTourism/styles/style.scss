@@ -922,7 +922,18 @@ ul {
 
 .userflow {
 	width: 100%;
-	padding-bottom: 3rem;
+	padding-bottom: 5rem;
+	.trial {
+		display: grid;
+		grid-template-columns: 35% 1fr;
+		grid-gap: 4rem;
+		align-items: center;
+		.t-h3 {
+			font-size: 5rem;
+			line-height: 6rem;
+			color: #0c2b34;
+		}
+	}
 	&__container {
 		width: 100%;
 		max-width: 980px;
@@ -949,8 +960,15 @@ ul {
 			}
 		}
 	}
+	.t-p {
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+	}
+	.red {
+		font-weight: 500;
+		color: #f15b66;
+	}
 	img {
-		width: 90%;
 		margin: 0 auto;
 	}
 }
