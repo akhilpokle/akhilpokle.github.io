@@ -392,25 +392,31 @@
         </section>
         <section class="validate">
             <div class="validate__container">
-                <h2 class="t-h2">5. Validate</h2>
+                <div class="trial">
+                    <h2 class="t-h3">5. Validate</h2>
+                    <p>Testing the ease of using the design on a group of users, understanding their pain points and interating the prototype</p>
+                </div>
             </div>
         </section>
         <section class="user--test">
             <div class="user--test__container">
-                <h3 class="t-h3">User Test</h3>
                 <div class="user--tests">
                     <div>
-                        <p class="t-p">I conducted user testing for the mid-fi prototype.<br/> 
-                            The goal was to check if the layout was intuitive enough<br/>
-                            The goal was to identify pain points that could be improved in future iterations. </p>
+                        <div>
+                            <h3 class="t-h3">User Tests</h3>
+                            <p class="t-p">Counducted user tests on clickable prototype</p>
+                            <p class="t-p">Aim was to observe how user completes certain tasks</p>
+                            <p class="t-p">Based on the feeback, interations to exsisting prototypes were made.</p>
+                        </div>
+                        <div>
+                            <h3 class="t-h3">Tasks</h3>
+                            <p class="t-p">1. Book a tour for your desired experience or destination.</p>
+                            <p class="t-p">2. Find helpline number</p>
+                            <p class="t-p">3. Find Visa information</p>
+                            <p class="t-p">4. User visited the website from an external link.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="t-h3">Tasks :</h3>
-                        <p class="t-p">1. Book a tour for your desired experience or destination.</p>
-                        <p class="t-p">2. Find helpline number</p>
-                        <p class="t-p">3. Find Visa information</p>
-                        <p class="t-p">4. Explore the website as if you were the user didn't knew about gujarat and stumbled upon the website from an external link.</p>
-                    </div>
+                        <img src="./images/testins.svg" alt="tests">
                 </div>
             </div>
         </section>
@@ -431,9 +437,18 @@
                     <div>
                         <h3 class="t-h3">Inspiration and analysis</h3>
                         <p class="t-p">I researched about breadcrumbs, pros and cons of using them and how to implement them</p>
-                        <p class="t-p">Major thing that stood out was never to create a dynamic breadcrumb since it might confuse the user and also when a user visits the page from an external site, the breadcrumb will be confusing</p>
-                        <p class="t-p">So, the best way to implement the breadcrumbs was to design a single canonical breadcrumb depending upon task and main goal</p>
-                        <p class="t-p">In the above case since the user is ultimately booking a tour, it made sense to implement breadcrum as home page -> tours page -> tour</p>
+                        <p class="t-p"><span class="red">Dynamic Breadcrumbs:</span> ie breadcrumbs based on user history, these are frowned upon since user might get confused.</p>
+                        <p class="t-p"><span class="red">External link:</span> Another problem was, if the user visits an internal page from an external link, then how should the breadcrumbs look like?</p>
+                        
+                        <h3 class="t-h3">Task Oriented Design ?</h3>
+                        <p class="t-p">The main job as a developer is to design systems such that it's easier for the user to accomplish a task</p>
+                        <p class="t-p">In this case my task was to design a breadcrumb system such that it's easier for the user to navigate</p>
+                        <p class="t-p">This was my thinking when a user want's to book a tour at a destination of his choice</p>
+                        <p class="t-p">1. He could go to tours, and search for tours in the destination.</p>
+                        <p class="t-p">2. He could first go to the dsetination and then find the tours.</p>
+                        <p class="t-p">Since here the main task is to book a tour, following breadcrumb made more sense :</p>
+                        <p class="t-p">Homepage -> Tours Page -> Tour Details Page</p>
+                        <p class="t-p">Based on similar thinking I made a Canonical path for each page and designed breadcrumbs based on it.</p>
                     </div>
                     <div>
                         <img src="./images/pathbasedoracle.png" alt="inspiration">

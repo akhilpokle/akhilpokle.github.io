@@ -1688,6 +1688,23 @@ ul {
   padding-bottom: 3rem;
 }
 
+.validate .trial {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 1fr;
+      grid-template-columns: 35% 1fr;
+  grid-gap: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.validate .trial .t-h3 {
+  font-size: 5rem;
+  line-height: 6rem;
+  color: #0c2b34;
+}
+
 .validate__container {
   width: 100%;
   max-width: 980px;
@@ -1747,19 +1764,21 @@ ul {
 .user--test .user--tests {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
   grid-gap: 20px;
   justify-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .user--test .user--tests .t-p {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .user--test .user--tests img {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  width: 100%;
 }
 
 @media only screen and (max-width: 670px) {
@@ -1784,6 +1803,11 @@ ul {
   .user--test {
     padding-bottom: 2rem;
   }
+}
+
+.user--test .t-h3 {
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
 }
 
 .analysis {
@@ -1855,8 +1879,8 @@ ul {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60% 1fr;
-      grid-template-columns: 60% 1fr;
+  -ms-grid-columns: 50% 1fr;
+      grid-template-columns: 50% 1fr;
   justify-items: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1865,6 +1889,11 @@ ul {
 
 .analysis .inspiration__container .t-p {
   padding: 0.5rem 0rem;
+}
+
+.analysis .inspiration__container .t-h3 {
+  padding-bottom: 0.5rem;
+  padding-top: 1.5rem;
 }
 
 .analysis .inspiration__container img {

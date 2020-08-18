@@ -1134,7 +1134,17 @@ ul {
 .validate {
 	width: 100%;
 	padding-bottom: 3rem;
-
+	.trial {
+		display: grid;
+		grid-template-columns: 35% 1fr;
+		grid-gap: 4rem;
+		align-items: center;
+		.t-h3 {
+			font-size: 5rem;
+			line-height: 6rem;
+			color: #0c2b34;
+		}
+	}
 	&__container {
 		width: 100%;
 		max-width: 980px;
@@ -1169,14 +1179,15 @@ ul {
 	}
 	.user--tests {
 		display: grid;
-		grid-template-columns: 50% 50%;
+		grid-template-columns: 45% 45%;
 		grid-gap: 20px;
 		justify-items: end;
+		align-items: center;
 		.t-p {
-			padding-bottom: 1rem;
+			padding-bottom: 0.5rem;
 		}
 		img {
-			transform: rotate(270deg);
+			width: 100%;
 		}
 		@media only screen and (max-width: $bp-mobile) {
 			display: flex;
@@ -1187,6 +1198,10 @@ ul {
 	}
 	@media only screen and (max-width: $bp-mobile) {
 		padding-bottom: 2rem;
+	}
+	.t-h3 {
+		padding-bottom: 0.5rem;
+		padding-top: 1rem;
 	}
 }
 
@@ -1232,11 +1247,16 @@ ul {
 		padding: 10rem 0rem;
 		width: 100%;
 		display: grid;
-		grid-template-columns: 60% 1fr;
+		grid-template-columns: 50% 1fr;
 		justify-items: end;
 		align-items: center;
 		.t-p {
 			padding: 0.5rem 0rem;
+		}
+
+		.t-h3 {
+			padding-bottom: 0.5rem;
+			padding-top: 1.5rem;
 		}
 		img {
 			max-width: 100%;
