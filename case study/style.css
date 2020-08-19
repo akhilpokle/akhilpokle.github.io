@@ -56,6 +56,32 @@
   background-color: #fe4c3b;
 }
 
+.project3 {
+  width: 100%;
+  padding: 5rem 0rem;
+}
+
+.project3__container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project3 img {
+  max-width: 100%;
+}
+
+.project3 .btn-orange {
+  background-color: #fe4c3b;
+}
+
 .btn-orange {
   background-color: #f25f3a;
   color: white;
