@@ -590,3 +590,87 @@ footer {
 		padding: 0.2rem 0rem;
 	}
 }
+
+.understand {
+	width: 100%;
+	padding: 5rem 0rem;
+	&__container {
+		width: 80%;
+		max-width: 980px;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__copy {
+		width: 65%;
+		text-align: center;
+	}
+}
+
+.competetion {
+	width: 100%;
+	padding: 5rem 0rem;
+	&__container {
+		width: 80%;
+		max-width: 980px;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	img {
+		max-width: 100%;
+	}
+	&__copy {
+		text-align: center;
+		width: 65%;
+	}
+}
+
+.problem {
+	width: 100%;
+	padding: 5rem 0rem;
+	img {
+		max-width: 100%;
+	}
+	&__container {
+		width: 80%;
+		max-width: 980px;
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+	}
+	&__copy {
+		text-align: center;
+		width: 65%;
+		margin: auto;
+	}
+}
+
+.design {
+	width: 100%;
+	padding: 5rem 0rem;
+	&__container {
+		width: 80%;
+		max-width: 980px;
+		margin: auto;
+	}
+	.card {
+		display: grid;
+		grid-template-columns: 45% 45%;
+		align-items: center;
+		padding: 2rem 0rem;
+		grid-gap: 50px;
+		&__container {
+		}
+		img {
+			max-width: 100%;
+		}
+		.t-p {
+			padding: 0.5rem 0rem;
+		}
+	}
+}

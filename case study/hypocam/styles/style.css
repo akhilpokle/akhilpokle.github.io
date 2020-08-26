@@ -755,4 +755,124 @@ footer .bragging p {
 .usability .a {
   padding: 0.2rem 0rem;
 }
+
+.understand {
+  width: 100%;
+  padding: 5rem 0rem;
+}
+
+.understand__container {
+  width: 80%;
+  max-width: 980px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.understand__copy {
+  width: 65%;
+  text-align: center;
+}
+
+.competetion {
+  width: 100%;
+  padding: 5rem 0rem;
+}
+
+.competetion__container {
+  width: 80%;
+  max-width: 980px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.competetion img {
+  max-width: 100%;
+}
+
+.competetion__copy {
+  text-align: center;
+  width: 65%;
+}
+
+.problem {
+  width: 100%;
+  padding: 5rem 0rem;
+}
+
+.problem img {
+  max-width: 100%;
+}
+
+.problem__container {
+  width: 80%;
+  max-width: 980px;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.problem__copy {
+  text-align: center;
+  width: 65%;
+  margin: auto;
+}
+
+.design {
+  width: 100%;
+  padding: 5rem 0rem;
+}
+
+.design__container {
+  width: 80%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.design .card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0rem;
+  grid-gap: 50px;
+}
+
+.design .card img {
+  max-width: 100%;
+}
+
+.design .card .t-p {
+  padding: 0.5rem 0rem;
+}
 /*# sourceMappingURL=style.css.map */
