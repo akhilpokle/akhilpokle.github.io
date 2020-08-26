@@ -653,6 +653,9 @@ footer {
 .design {
 	width: 100%;
 	padding: 5rem 0rem;
+	h3 {
+		text-align: center;
+	}
 	&__container {
 		width: 80%;
 		max-width: 980px;
@@ -672,5 +675,80 @@ footer {
 		.t-p {
 			padding: 0.5rem 0rem;
 		}
+	}
+}
+
+.wireframes {
+	width: 100%;
+	padding: 5rem 0rem;
+	text-align: center;
+	&__container {
+		width: 65%;
+		max-width: 980px;
+		margin: auto;
+		text-align: center;
+	}
+	img {
+		width: 100%;
+		max-width: 980px;
+		margin: auto;
+	}
+}
+
+.prototype {
+	width: 100%;
+	padding: 5rem 0rem;
+	&__container {
+		width: 80%;
+		max-width: 980px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.testing {
+	width: 100%;
+	padding: 5rem 0rem;
+	&__container {
+		width: 80%;
+		max-width: 980px;
+		margin: auto;
+	}
+	img {
+		max-width: 100%;
+	}
+	.t-p {
+		padding: 1rem 0rem;
+	}
+}
+
+.hi-fi {
+	width: 100%;
+	padding: 5rem 0rem;
+	&__container {
+		width: 80%;
+		max-width: 980px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__copy {
+		width: 45%;
+	}
+}
+
+.lessons {
+	width: 100%;
+	padding: 5rem 0rem;
+	.container {
+		max-width: 980px;
+		width: 100%;
+		margin: auto;
+	}
+	.t-p {
+		padding: 0.5rem 0rem;
 	}
 }

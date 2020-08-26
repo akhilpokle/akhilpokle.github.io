@@ -850,6 +850,10 @@ footer .bragging p {
   padding: 5rem 0rem;
 }
 
+.design h3 {
+  text-align: center;
+}
+
 .design__container {
   width: 80%;
   max-width: 980px;
@@ -873,6 +877,103 @@ footer .bragging p {
 }
 
 .design .card .t-p {
+  padding: 0.5rem 0rem;
+}
+
+.wireframes {
+  width: 100%;
+  padding: 5rem 0rem;
+  text-align: center;
+}
+
+.wireframes__container {
+  width: 65%;
+  max-width: 980px;
+  margin: auto;
+  text-align: center;
+}
+
+.wireframes img {
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.prototype {
+  width: 100%;
+  padding: 5rem 0rem;
+}
+
+.prototype__container {
+  width: 80%;
+  max-width: 980px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testing {
+  width: 100%;
+  padding: 5rem 0rem;
+}
+
+.testing__container {
+  width: 80%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.testing img {
+  max-width: 100%;
+}
+
+.testing .t-p {
+  padding: 1rem 0rem;
+}
+
+.hi-fi {
+  width: 100%;
+  padding: 5rem 0rem;
+}
+
+.hi-fi__container {
+  width: 80%;
+  max-width: 980px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hi-fi__copy {
+  width: 45%;
+}
+
+.lessons {
+  width: 100%;
+  padding: 5rem 0rem;
+}
+
+.lessons .container {
+  max-width: 980px;
+  width: 100%;
+  margin: auto;
+}
+
+.lessons .t-p {
   padding: 0.5rem 0rem;
 }
 /*# sourceMappingURL=style.css.map */
