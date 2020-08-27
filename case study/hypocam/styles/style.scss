@@ -752,3 +752,24 @@ footer {
 		padding: 0.5rem 0rem;
 	}
 }
+
+.changes {
+	width: 100%;
+	padding: 5rem 0rem;
+	padding-bottom: 2rem;
+	&__container {
+		width: 80%;
+		max-width: 980px;
+		margin: auto;
+	}
+}
+
+.camera {
+	width: 100%;
+	padding: 3rem 0rem;
+	&__container {
+		width: 80%;
+		max-width: 980px;
+		margin: auto;
+	}
+}
