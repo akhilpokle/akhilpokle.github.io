@@ -999,4 +999,19 @@ footer .bragging p {
   max-width: 980px;
   margin: auto;
 }
+
+.process {
+  width: 100%;
+  padding: 3rem 0rem;
+}
+
+.process__container {
+  width: 80%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.process img {
+  margin: auto;
+}
 /*# sourceMappingURL=style.css.map */

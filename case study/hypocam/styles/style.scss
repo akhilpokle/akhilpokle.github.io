@@ -773,3 +773,16 @@ footer {
 		margin: auto;
 	}
 }
+
+.process {
+	width: 100%;
+	padding: 3rem 0rem;
+	&__container {
+		width: 80%;
+		max-width: 980px;
+		margin: auto;
+	}
+	img {
+		margin: auto;
+	}
+}
