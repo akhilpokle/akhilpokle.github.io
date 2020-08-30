@@ -1014,4 +1014,8 @@ footer .bragging p {
 .process img {
   margin: auto;
 }
+
+.process .t-p {
+  padding: 0.5rem 0rem;
+}
 /*# sourceMappingURL=style.css.map */
