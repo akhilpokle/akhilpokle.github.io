@@ -817,6 +817,7 @@ footer .mobile__nav {
   }
   .case__study .case__study__details img {
     width: 100%;
+    max-width: 480px;
   }
 }
 
