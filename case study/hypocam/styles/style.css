@@ -557,8 +557,26 @@ footer .bragging p {
   margin: auto;
 }
 
+@media only screen and (max-width: 378px) {
+  .intro__container {
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .intro__copy {
   width: 45%;
+}
+
+@media only screen and (max-width: 378px) {
+  .intro__copy {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .intro p {
@@ -649,6 +667,7 @@ footer .bragging p {
 
 .empathy h3 {
   padding-bottom: 2rem;
+  line-height: 3.5rem;
 }
 
 .empathy p {
@@ -676,6 +695,14 @@ footer .bragging p {
   margin: auto;
 }
 
+.decon h3 {
+  line-height: 3.5rem;
+}
+
+.decon img {
+  max-width: 100%;
+}
+
 .user-review {
   width: 100%;
   padding: 5rem 0rem;
@@ -696,8 +723,26 @@ footer .bragging p {
           align-items: center;
 }
 
+@media only screen and (max-width: 378px) {
+  .user-review__container {
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .user-review__copy {
   width: 50%;
+}
+
+@media only screen and (max-width: 378px) {
+  .user-review__copy {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .user-review .c {
@@ -783,6 +828,15 @@ footer .bragging p {
 .understand__copy {
   width: 65%;
   text-align: center;
+}
+
+@media only screen and (max-width: 378px) {
+  .understand__image {
+    max-width: 100%;
+  }
+  .understand__image img {
+    max-width: 100%;
+  }
 }
 
 .competetion {
@@ -872,6 +926,20 @@ footer .bragging p {
   grid-gap: 50px;
 }
 
+@media only screen and (max-width: 378px) {
+  .design .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .design .card img {
   max-width: 100%;
 }
@@ -919,6 +987,20 @@ footer .bragging p {
           align-items: center;
 }
 
+@media only screen and (max-width: 378px) {
+  .prototype__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .testing {
   width: 100%;
   padding: 5rem 0rem;
@@ -956,6 +1038,20 @@ footer .bragging p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 378px) {
+  .hi-fi__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .hi-fi__copy {
@@ -1000,6 +1096,23 @@ footer .bragging p {
   margin: auto;
 }
 
+@media only screen and (max-width: 378px) {
+  .camera__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .camera__container img {
+    max-width: 100%;
+  }
+}
+
 .process {
   width: 100%;
   padding: 3rem 0rem;
@@ -1009,6 +1122,26 @@ footer .bragging p {
   width: 80%;
   max-width: 980px;
   margin: auto;
+}
+
+@media only screen and (max-width: 378px) {
+  .process__container {
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .process__container h3,
+  .process__container p {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+.process__container img {
+  max-width: 100%;
 }
 
 .process img {

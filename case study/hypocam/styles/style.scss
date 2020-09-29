@@ -441,9 +441,18 @@ footer {
 		width: 80%;
 		max-width: 980px;
 		margin: auto;
+		@media only screen and (max-width: 378px) {
+			width: 100%;
+			margin: 0 auto;
+			flex-direction: column-reverse;
+		}
 	}
 	&__copy {
 		width: 45%;
+		@media only screen and (max-width: 378px) {
+			width: 80%;
+			margin: 0 auto;
+		}
 	}
 	p {
 		padding: 0.5rem 0rem;
@@ -511,6 +520,7 @@ footer {
 	}
 	h3 {
 		padding-bottom: 2rem;
+		line-height: 3.5rem;
 	}
 	p {
 		padding-bottom: 4rem;
@@ -533,6 +543,12 @@ footer {
 		width: 75%;
 		margin: auto;
 	}
+	h3 {
+		line-height: 3.5rem;
+	}
+	img {
+		max-width: 100%;
+	}
 }
 
 .user-review {
@@ -545,9 +561,18 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media only screen and (max-width: 378px) {
+			width: 100%;
+			margin: 0 auto;
+			flex-direction: column-reverse;
+		}
 	}
 	&__copy {
 		width: 50%;
+		@media only screen and (max-width: 378px) {
+			width: 80%;
+			margin: 0 auto;
+		}
 	}
 	.c {
 		padding: 1rem 0rem;
@@ -606,6 +631,14 @@ footer {
 	&__copy {
 		width: 65%;
 		text-align: center;
+	}
+	&__image {
+		@media only screen and (max-width: 378px) {
+			max-width: 100%;
+			img {
+				max-width: 100%;
+			}
+		}
 	}
 }
 
@@ -667,7 +700,11 @@ footer {
 		align-items: center;
 		padding: 2rem 0rem;
 		grid-gap: 50px;
-		&__container {
+		@media only screen and (max-width: 378px) {
+			display: flex;
+			width: 100%;
+			margin: 0 auto;
+			flex-direction: column-reverse;
 		}
 		img {
 			max-width: 100%;
@@ -705,6 +742,12 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media only screen and (max-width: 378px) {
+			display: flex;
+			width: 100%;
+			margin: 0 auto;
+			flex-direction: column-reverse;
+		}
 	}
 }
 
@@ -734,6 +777,12 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media only screen and (max-width: 378px) {
+			display: flex;
+			width: 100%;
+			margin: 0 auto;
+			flex-direction: column-reverse;
+		}
 	}
 	&__copy {
 		width: 45%;
@@ -771,6 +820,15 @@ footer {
 		width: 80%;
 		max-width: 980px;
 		margin: auto;
+		@media only screen and (max-width: 378px) {
+			display: flex;
+			width: 100%;
+			margin: 0 auto;
+			flex-direction: column-reverse;
+			img {
+				max-width: 100%;
+			}
+		}
 	}
 }
 
@@ -781,6 +839,19 @@ footer {
 		width: 80%;
 		max-width: 980px;
 		margin: auto;
+		@media only screen and (max-width: 378px) {
+			width: 100%;
+			margin: 0 auto;
+			flex-direction: column-reverse;
+			h3,
+			p {
+				max-width: 80%;
+				margin: auto;
+			}
+		}
+		img {
+			max-width: 100%;
+		}
 	}
 	img {
 		margin: auto;
